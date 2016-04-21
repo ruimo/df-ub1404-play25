@@ -22,5 +22,6 @@ RUN cd /var && \
   bin/activator package
 
 EXPOSE 9000
+EXPOSE 7777
 
 CMD ["/bin/bash"]
