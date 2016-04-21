@@ -24,4 +24,4 @@ RUN cd /var && \
 EXPOSE 9000
 EXPOSE 7777
 
-CMD ["/bin/bash"]
+CMD ["/bin/sleep", "infinity"]
