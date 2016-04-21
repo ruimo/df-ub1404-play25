@@ -19,7 +19,10 @@ RUN cd /var && \
   mkdir dev && \
   activator new web play-scala && \
   cd web && \
-  bin/activator package
+  bin/activator package && \
+  rm -rf /var/web
+
+VOLUME ["/var/home"]
 
 EXPOSE 9000
 EXPOSE 7777
