@@ -22,6 +22,8 @@ RUN cd /var && \
   bin/activator package && \
   rm -rf /var/web
 
+ENV SBT_OPTS "-XX:+CMSClassUnloadingEnabled -Xmx1536m"
+
 VOLUME ["/var/home"]
 
 EXPOSE 9000
